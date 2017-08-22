@@ -5,13 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#D6EAF8"
     tools:context="com.example.bhargav.wattup.SignUpActivity">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:src="@drawable/Logo"
+        />
 
     <EditText
         android:id="@+id/etregister"
