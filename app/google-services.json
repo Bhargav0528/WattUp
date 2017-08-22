@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "413185266592",
+    "firebase_url": "https://wattup-8e281.firebaseio.com",
+    "project_id": "wattup-8e281",
+    "storage_bucket": "wattup-8e281.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413185266592:android:504f482db54cfb68",
+        "android_client_info": {
+          "package_name": "com.example.bhargav.wattup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413185266592-ci3ubjk8i5v7hcaiknaclu9ghsb7pldq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT4fVT7HIhVWRTxTR8ykjgzPWIk4uEMc4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
