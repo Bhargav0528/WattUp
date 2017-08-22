@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.bhargav.wattup.HomeAutomationActivity"
-    android:background="#d3d3d3">
+    >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="433dp"
         android:orientation="vertical"
@@ -34,11 +34,29 @@
     </LinearLayout>
 
        <TextView
+           android:id="@+id/appliances"
            android:layout_width="match_parent"
            android:layout_height="80dp"
-           android:text="Appliances"
-           />
-    </LinearLayout>
+           android:text="    |   Appliances Control"
+           android:paddingTop="20dp"
+           android:textAppearance="?android:textAppearanceLarge"
+           android:layout_below="@+id/lin2"
+           android:layout_alignParentStart="true" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_below="@+id/appliances"
+            android:layout_alignParentStart="true">
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"

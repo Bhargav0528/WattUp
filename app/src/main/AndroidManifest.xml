@@ -19,7 +19,9 @@
         <activity android:name=".HomeAutomationActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".OptimizationActivity" />
-        <activity android:name=".BillPaymentActivity"></activity>
+        <activity android:name=".BillPaymentActivity" />
+        <activity android:name=".LogActivity" />
+        <activity android:name=".SignUpActivity"></activity>
     </application>
 
 </manifest>
