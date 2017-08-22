@@ -11,10 +11,15 @@
         android:layout_height="wrap_content">
 
     </ScrollView>
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/graph" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="asdasdasdasdasdasdasdasdasd"/>
+        android:text="asdasdasdasdasdasdasdasdasd"
+        android:layout_below="@+id/graph"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"

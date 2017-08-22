@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Switch;
 
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
+
 public class UsageTrackingActivity extends AppCompatActivity {
 
     private Switch gpsswitch;
@@ -17,6 +21,7 @@ public class UsageTrackingActivity extends AppCompatActivity {
     private ImageView usage;
     private ImageView opti;
     private ImageView settings;
+    private GraphView graph;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +33,8 @@ public class UsageTrackingActivity extends AppCompatActivity {
         usage = (ImageView)findViewById(R.id.usage);
         opti = (ImageView)findViewById(R.id.opti);
         settings = (ImageView)findViewById(R.id.settings);
+        graph = (GraphView)findViewById(R.id.graph);
+
 
         paybill.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,5 +66,14 @@ public class UsageTrackingActivity extends AppCompatActivity {
                 startActivity(new Intent(UsageTrackingActivity.this,SettingsActivity.class));
             }
         });
+
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
+                new DataPoint(0, 1),
+                new DataPoint(1, 5),
+                new DataPoint(2, 3),
+                new DataPoint(3, 2),
+                new DataPoint(4, 6)
+        });
+        graph.addSeries(series);
     }
 }

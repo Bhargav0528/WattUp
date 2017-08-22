@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "413185266592-2kig6ef05k3nhpmc9bp12g3cslo5dutc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bhargav.wattup",
+            "certificate_hash": "56c67f44d806960eaceb26db66468385b3db7033"
+          }
+        },
+        {
           "client_id": "413185266592-ci3ubjk8i5v7hcaiknaclu9ghsb7pldq.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413185266592-ci3ubjk8i5v7hcaiknaclu9ghsb7pldq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
