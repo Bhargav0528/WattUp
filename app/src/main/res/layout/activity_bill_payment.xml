@@ -19,7 +19,7 @@
             android:padding="12dp"
             android:background="@drawable/border"
 
-            android:src="@drawable/Bill" />
+            android:src="@drawable/bill" />
 
         <ImageView
             android:id="@+id/homeauto"
@@ -36,7 +36,7 @@
             android:layout_weight="1"
             android:padding="10dp"
             android:background="@drawable/border"
-            android:src="@drawable/Graph"/>
+            android:src="@drawable/graph"/>
         <ImageView
             android:id="@+id/opti"
             android:layout_width="0dp"
@@ -44,7 +44,7 @@
             android:layout_weight="1"
             android:padding="10dp"
             android:background="@drawable/border"
-            android:src="@drawable/Refresh"/>
+            android:src="@drawable/refresh"/>
 
         <ImageView
             android:id="@+id/settings"
@@ -53,6 +53,6 @@
             android:layout_weight="1"
             android:padding="10dp"
             android:background="@drawable/border"
-            android:src="@drawable/Settings" />
+            android:src="@drawable/settings" />
     </LinearLayout>
 </RelativeLayout>

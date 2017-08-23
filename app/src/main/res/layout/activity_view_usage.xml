@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bhargav.wattup.ViewUsageActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Power Used in Watts"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/tvpower"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tv1"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <TextView
+        android:layout_below="@+id/tvpower"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estimated Bill"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tv2"
+        android:id="@+id/tvbill"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/showusage"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Get Data"
+        android:layout_marginBottom="30dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_below="@+id/tvbill"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/border2"/>
+    <TextView
+        android:id="@+id/showusage1"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:text="Show Usage"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_below="@+id/showusage"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/border2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:text="PAY BILL ONLINE"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:paddingTop="17dp"
+        android:paddingLeft="110dp"
+        android:background="@drawable/border2"/>
+
+</RelativeLayout>

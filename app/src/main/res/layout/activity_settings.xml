@@ -26,13 +26,24 @@
             android:text="  |  How to Use"
             android:textAppearance="?android:textAppearanceLarge" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="60dp"
             android:paddingTop="15dp"
             android:text="  |  IOT Precision"
             android:textAppearance="?android:textAppearanceLarge" />
+        <Switch
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:id="@+id/switch1"
+            android:paddingRight="50dp"
+            />
+        </LinearLayout>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -47,8 +58,8 @@
             android:paddingTop="15dp"
             android:textAppearance="?android:textAppearanceLarge"/>
     </LinearLayout>
+
     <LinearLayout
-        android:id="@+id/lin1"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
@@ -59,43 +70,44 @@
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:padding="2dp"
+            android:padding="12dp"
             android:background="@drawable/border"
-            android:src="@drawable/tiger" />
+
+            android:src="@drawable/bill" />
 
         <ImageView
             android:id="@+id/homeauto"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:padding="2dp"
+            android:padding="10dp"
             android:background="@drawable/border"
-            android:src="@drawable/tiger" />
+            android:src="@drawable/house" />
         <ImageView
             android:id="@+id/usage"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:padding="2dp"
+            android:padding="10dp"
             android:background="@drawable/border"
-            android:src="@drawable/tiger"/>
+            android:src="@drawable/graph"/>
         <ImageView
-            android:id="@+id/opti"
+            android:id="@+id/opti2"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:padding="2dp"
+            android:padding="10dp"
             android:background="@drawable/border"
-            android:src="@drawable/tiger"/>
+            android:src="@drawable/refresh"/>
 
         <ImageView
             android:id="@+id/settings"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:padding="2dp"
+            android:padding="10dp"
             android:background="@drawable/border"
-            android:src="@drawable/tiger" />
+            android:src="@drawable/settings" />
     </LinearLayout>
 
 </RelativeLayout>

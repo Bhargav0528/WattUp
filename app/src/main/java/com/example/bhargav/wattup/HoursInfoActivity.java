@@ -8,16 +8,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.UploadTask;
 
-import java.util.ArrayList;
+public class HoursInfoActivity extends AppCompatActivity {
 
-public class UserInfoActivity extends AppCompatActivity {
     private EditText fan;
     private EditText bulb;
     private EditText ac;
@@ -51,7 +48,7 @@ public class UserInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_info);
+        setContentView(R.layout.activity_hours_info);
 
         fan=(EditText)findViewById(R.id.fan);
         bulb=(EditText)findViewById(R.id.bulb);
@@ -67,7 +64,7 @@ public class UserInfoActivity extends AppCompatActivity {
         FirebaseUser user = mAuth.getCurrentUser();
 
         assert user!=null;
-         uid = user.getUid();
+        uid = user.getUid();
 
         ref = FirebaseDatabase.getInstance().getReference();
 
@@ -80,7 +77,6 @@ public class UserInfoActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.settings:
-                items = new int[9];
                 items[0] = Integer.parseInt(module.getText().toString());
                 items[1] = Integer.parseInt(fan.getText().toString());
                 items[2]= Integer.parseInt(bulb.getText().toString());
@@ -101,7 +97,7 @@ public class UserInfoActivity extends AppCompatActivity {
                 module.setText("");
                 for(int i=1;i<9;i++)
                 {
-                    ref.child("users").child(uid).child(names[0]+" "+items[0]).child(names[i]+"").child("number").setValue(items[i]+"");
+                    ref.child("users").child(uid).child(names[0]+" "+items[0]).child(names[i]+"").child("hours").setValue(items[i]+"");
                 }
 
 
@@ -119,9 +115,9 @@ public class UserInfoActivity extends AppCompatActivity {
                 items[8] = Integer.parseInt(water.getText().toString());
                 for(int i=1;i<9;i++)
                 {
-                    ref.child("users").child(uid).child(names[0]+" "+items[0]).child(names[i]+"").child("number").setValue(items[i]+"");
+                    ref.child("users").child(uid).child(names[0]+" "+items[0]).child(names[i]+"").child("hours").setValue(items[i]+"");
                 }
-                startActivity(new Intent(UserInfoActivity.this,SettingsActivity.class));
+                startActivity(new Intent(HoursInfoActivity.this,SettingsActivity.class));
 
                 return true;
             default:
@@ -131,4 +127,3 @@ public class UserInfoActivity extends AppCompatActivity {
         }
     }
 }
-

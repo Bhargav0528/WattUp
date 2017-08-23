@@ -28,7 +28,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".UserInfoActivity"></activity>
+        <activity
+            android:name=".UserInfoActivity"
+            android:label="Number of Appliances" />
+        <activity android:name=".HoursInfoActivity" />
+        <activity android:name=".ViewUsageActivity" />
+        <activity android:name=".ProfileLayoutActivity" />
+        <activity android:name=".HomeAppliancesActivity"></activity>
     </application>
 
 </manifest>
