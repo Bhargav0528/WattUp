@@ -26,7 +26,7 @@ public class BillPaymentActivity extends AppCompatActivity {
         paybill = (ImageView)findViewById(R.id.bill);
         homeauto = (ImageView)findViewById(R.id.homeauto);
         usage = (ImageView)findViewById(R.id.usage);
-        opti = (ImageView)findViewById(R.id.opti2);
+        opti = (ImageView)findViewById(R.id.opti);
         settings = (ImageView)findViewById(R.id.settings);
 
         paybill.setOnClickListener(new View.OnClickListener() {

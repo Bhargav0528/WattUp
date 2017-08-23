@@ -24,7 +24,7 @@ public class OptimizationActivity extends AppCompatActivity {
         paybill = (ImageView)findViewById(R.id.bill);
         homeauto = (ImageView)findViewById(R.id.homeauto);
         usage = (ImageView)findViewById(R.id.usage);
-        opti = (ImageView)findViewById(R.id.opti);
+        opti = (ImageView)findViewById(R.id.opti2);
         settings = (ImageView)findViewById(R.id.settings);
 
         paybill.setOnClickListener(new View.OnClickListener() {
